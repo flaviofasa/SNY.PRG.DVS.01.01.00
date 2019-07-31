@@ -5,3 +5,7 @@ vagrant/.vagrant
 **/*.tfstate
 **/*.tfstate.backup
 **/*.zip
+**/.classpath
+**/.settings
+**/target
+.project
