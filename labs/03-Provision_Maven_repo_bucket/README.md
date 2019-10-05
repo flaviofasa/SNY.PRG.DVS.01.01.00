@@ -139,4 +139,6 @@ google_storage_bucket.mvnrepo: Creation complete after 1s [id=mvnrepo-sny-prg-dv
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
+At the end, a new GCS bucket has been provisioned
 
+![GCS Maven repo bucket](img/maven_repo.png)

@@ -12,9 +12,10 @@ The following softwares have to be installed on you host machine
 
 ## VM provisioning
 
-Install the Vagrant hostmanager plugin
+Install Vagrant plugins
 
 ```console
+$ vagrant plugin install vagrant-vbguest
 $ vagrant plugin install vagrant-hostmanager
 ```
 

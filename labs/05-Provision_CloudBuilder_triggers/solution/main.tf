@@ -5,11 +5,8 @@ provider "google" {
  region      = "us-west1-a"
 }
 
-// Terraform plugin for creating random ids
-resource "random_id" "instance_id" {
- byte_length = 8
-}
 
-resource "google_storage_bucket" "mvnrepo" {
-  name     = "mvnrepo-${random_id.instance_id.hex}"
+
+resource "google_sourcerepo_repository" "my-repo" {
+  name = "my-repository"
 }
