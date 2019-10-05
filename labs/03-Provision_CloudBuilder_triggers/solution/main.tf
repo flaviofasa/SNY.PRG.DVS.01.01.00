@@ -11,6 +11,5 @@ resource "random_id" "instance_id" {
 }
 
 resource "google_storage_bucket" "mvnrepo" {
-  force_destroy = true
   name     = "mvnrepo-${random_id.instance_id.hex}"
 }
