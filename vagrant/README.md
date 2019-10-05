@@ -59,6 +59,7 @@ Enter into the newly born VM
 
 ```console
 $ vagrant ssh
+vagrant@terraform-vm:~$ 
 ```
 
 You are now ready for the next labs
