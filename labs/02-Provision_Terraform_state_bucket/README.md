@@ -23,7 +23,6 @@ Before proceding, please open the file **terraform.tfvars** and change variables
 
 ## Bucket provisioning
 
-
 With remote state, Terraform writes the state data to a remote data store, which can then be shared between all members of a team. Terraform supports storing state in Terraform Cloud, HashiCorp Consul, Amazon S3, GCP and more.
 
 In this case we use GCP bucket to share the Terraform state among team members.
