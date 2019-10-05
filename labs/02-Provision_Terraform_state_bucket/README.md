@@ -13,11 +13,16 @@ $ cd <GIT_REPO_NAME>/vagrant
 $ vagrant ssh
 ```
 
-Move to the right path and 
+Move to the right path
 
 ```console
 vagrant@terraform-vm$ cd ~/$GIT_REPO_NAME/labs/02-Provision_Terraform_state_bucket
 ```
+
+Before proceding, please open the file **terraform.tfvars** and change variables values according to your needs.
+
+## Bucket provisioning
+
 
 With remote state, Terraform writes the state data to a remote data store, which can then be shared between all members of a team. Terraform supports storing state in Terraform Cloud, HashiCorp Consul, Amazon S3, GCP and more.
 
@@ -115,10 +120,11 @@ As a result, the bucket is available on GCP console
 
 ![Terraform state bucket](img/trfstate.png)
 
-To sync the local state used so far with the new remote state on the GCS bucket, rename the file **backend.tf_rename_me** to **backend.tf** and run the init again.
+To sync the local state used so far with the new remote state on the GCS bucket, rename the file **backend.tf_rename_me** to **backend.tf**, open it and change the values accordingly, then run the init again.
+
+Be aware that in **backend.tf** no string interpolation is allowed so you can not use variables.
 
 ```console
-vagrant@terraform-vm$  mv backend.tf_rename_me backend.tf
 vagrant@terraform-vm$  terraform init
 
 Initializing the backend...
