@@ -7,13 +7,9 @@ sudo apt-get -y install ruby2.6 ruby2.6-dev
 sudo echo 2.6.2p47 > /home/vagrant/magic-modules/.ruby-version
 
 # Python3
-sudo apt-get remove -y python
-sudo apt-get remove -y 'python3.*'
 sudo apt-get install -y python3.6
 
 # Pip
-sudo apt-get remove -y python-pip
-sudo apt-get remove -y python3-pip
 sudo apt-get install -y python3-pip
 sudo pip3 install --upgrade pip
 
@@ -57,5 +53,5 @@ cd /home/vagrant/rbenv
 /home/vagrant/rbenv/src/configure && make -C /home/vagrant/rbenv/src
 
 # Goimports
-sudo go get golang.org/x/tools/cmd/goimports
+sudo /usr/local/go/bin/go get golang.org/x/tools/cmd/goimports
 
