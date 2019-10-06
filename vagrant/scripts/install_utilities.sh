@@ -4,7 +4,7 @@ sudo apt-get update
 
 # Ruby 
 sudo apt-get -y install ruby2.6 ruby2.6-dev
-sudo echo 2.6.2p47 > /home/vagrant/magic-modules/.ruby-version
+echo 2.6.2p47 > /home/vagrant/magic-modules/.ruby-version
 
 # Python3
 sudo apt-get install -y python3.6
@@ -36,12 +36,12 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get -y install google-cloud-sdk
 
 # Kuberang
-curl -sL https://github.com/apprenda/kuberang/releases/download/v1.3.0/kuberang-linux-amd64 | sudo dd of="/usr/local/bin/kuberang"
+sudo curl -sL https://github.com/apprenda/kuberang/releases/download/v1.3.0/kuberang-linux-amd64 | sudo dd of="/usr/local/bin/kuberang"
 sudo chmod 755 /usr/local/bin/kuberang
 
 # Go
 cd /tmp
-wget https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz
+sudo wget https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz
 sudo tar -xvf go1.13.1.linux-amd64.tar.gz
 sudo mv go /usr/local
 
@@ -49,10 +49,10 @@ sudo mv go /usr/local
 sudo gem install bundler
 
 # Rbenv
-sudo git clone https://github.com/rbenv/rbenv.git /home/vagrant/rbenv
+git clone https://github.com/rbenv/rbenv.git /home/vagrant/rbenv
 cd /home/vagrant/rbenv
 /home/vagrant/rbenv/src/configure && make -C /home/vagrant/rbenv/src
 
 # Goimports
-sudo /usr/local/go/bin/go get golang.org/x/tools/cmd/goimports
+/usr/local/go/bin/go get golang.org/x/tools/cmd/goimports
 

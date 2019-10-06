@@ -1,3 +1,4 @@
+. /home/vagrant/.bash_profile
 sudo rm -rf /home/vagrant/magic-modules
 sudo rm -rf $GOPATH/src/*
 
