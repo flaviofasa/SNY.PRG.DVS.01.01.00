@@ -5,4 +5,4 @@
 #fi
 ln -s /usr/src/git_repo $GIT_REPO_NAME
 git clone $GIT_HELLO_REPO_URL 
-git clone $GIT_WORLD_REPO_NAME
+git clone $GIT_WORLD_REPO_URL
