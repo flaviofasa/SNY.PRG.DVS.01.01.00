@@ -8,12 +8,13 @@ sudo echo 2.6.2p47 > /home/vagrant/magic-modules/.ruby-version
 
 # Python3
 sudo apt-get install -y python3.6
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+
 
 # Pip
 sudo apt-get install -y python3-pip
 sudo pip3 install --upgrade pip
 
-sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
 
 # Black 
 sudo pip3 install black
