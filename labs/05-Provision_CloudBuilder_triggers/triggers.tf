@@ -12,6 +12,7 @@ resource "google_cloudbuild_trigger" "world-trigger" {
       tag = ".*"
     }
   }
+  
 
   substitutions = {
     _ARTIFACT_ID = "${var.WORLD_ARTIFACT_ID}"
