@@ -1,0 +1,6 @@
+WORLD_ARTIFACT_ID="world"
+WORLD_GROUP_ID="it/sunnyvale"
+WORLD_REPO_OWNER="sunnyvale-academy"
+WORLD_REPO_NAME="World"
+HELLOWORLD_REPO_OWNER="sunnyvale-academy"
+HELLOWORLD_REPO_NAME="Helidon_HelloWorld"
