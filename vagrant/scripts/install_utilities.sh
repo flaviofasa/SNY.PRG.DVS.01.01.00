@@ -53,8 +53,8 @@ sudo gem install bundler
 
 # Rbenv
 sudo git clone https://github.com/rbenv/rbenv.git /home/vagrant/rbenv
-sudo cd /home/vagrant/rbenv
-sudo src/configure && make -C src
+cd /home/vagrant/rbenv
+/home/vagrant/rbenv/src/configure && make -C /home/vagrant/rbenv/src
 
 # Goimports
 sudo go get golang.org/x/tools/cmd/goimports
