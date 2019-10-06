@@ -1,17 +1,17 @@
 resource "google_cloudbuild_trigger" "world-trigger" {
 
-  /*trigger_template {
+  trigger_template {
     tag_name = ".*"
     repo_name   = "${var.WORLD_REPO_NAME}"
-  }*/
+  }
 
-  github {
+  /*github {
     owner = "${var.WORLD_REPO_OWNER}"
     name = "${var.WORLD_REPO_NAME}"
     push {
       tag = ".*"
     }
-  }
+  }*/
   
 
   substitutions = {
