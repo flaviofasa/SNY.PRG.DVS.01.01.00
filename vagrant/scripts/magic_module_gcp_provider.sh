@@ -25,6 +25,6 @@ make build
 cd /home/vagrant/go/src/github.com/terraform-providers/terraform-provider-google-beta
 make testacc TEST=./google-beta TESTARGS='-run=TestAccComputeAddress_addressBasicExample'
 
-mkdir /home/vagrant/.terraform.d/plugins
+mkdir -p /home/vagrant/.terraform.d/plugins
 ln -s $GOPATH/bin/terraform-provider-google ~/.terraform.d/plugins/terraform-provider-google
 ln -s $GOPATH/bin/terraform-provider-google-beta ~/.terraform.d/plugins/terraform-provider-google-beta
