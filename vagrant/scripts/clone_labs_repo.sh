@@ -4,5 +4,5 @@
 #    sudo chown -R vagrant:vagrant /home/vagrant
 #fi
 ln -s /usr/src/git_repo $GIT_REPO_NAME
-ln -s /usr/src/git_repo_hello $GIT_HELLO_REPO_NAME
-ln -s /usr/src/git_repo_world $GIT_WORLD_REPO_NAME
+git clone $GIT_HELLO_REPO_URL 
+git clone $GIT_WORLD_REPO_NAME
