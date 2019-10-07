@@ -1,0 +1,10 @@
+credentials    = "/home/vagrant/sny-prg-dvs-01-01-00-d6ee8c94b0e7.json"
+region             = "europe-west4"
+zones              = ["europe-west4-a", "europe-west4-b", "europe-west4-c"]
+name               = "gke-cluster"
+machine_type       = "g1-small"
+min_count          = 1
+max_count          = 3
+disk_size_gb       = 10
+service_account    = "devops@sny-prg-dvs-01-01-00.iam.gserviceaccount.com"
+initial_node_count = 2
