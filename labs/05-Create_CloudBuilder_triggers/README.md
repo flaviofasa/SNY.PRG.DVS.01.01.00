@@ -58,5 +58,10 @@ In the **Substitution variables** section, add the following:
 
 Please refer to the following image for details:
 
-![Helidon_HelloWorld trigger config](img/helloworld_trigger.png)
+![Helidon_HelloWorld trigger config](img/helloworld_trigger.png) 
 
+Everything should be ready to test building with Google Cloud Build.
+
+
+
+![Helidon_HelloWorld trigger config](img/cb_triggers.png) 
