@@ -25,7 +25,7 @@ vagrant@terraform-vm$ cd ~/World
 Tag your World repo to start a build
 
 ```console
-vagrant@terraform-vm$ git tag "1570468336" && git push origin --tags
+vagrant@terraform-vm$ git tag --delete "1570468336" ; git push --delete origin "1570468336" ; git tag "1570468336" && git push origin --tags
 Total 0 (delta 0), reused 0 (delta 0)
 To https://github.com/sunnyvale-academy/World.git
  * [new tag]         1570468336 -> 1570468336
@@ -64,7 +64,7 @@ The World version (tag name), must be referenced in `Helidon_HelloWorld/pom.xml`
 Tag your World repo to start a build
 
 ```console
-vagrant@terraform-vm$ git tag "1570468474" && git push origin --tags
+vagrant@terraform-vm$ git tag --delete "1570468474" ; git push --delete origin "1570468474" ; git tag "1570468474" && git push origin --tags
 Total 0 (delta 0), reused 0 (delta 0)
 To https://github.com/sunnyvale-academy/Helidon_HelloWorld.git
  * [new tag]         1570468474 -> 1570468474

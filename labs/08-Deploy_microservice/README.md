@@ -25,5 +25,9 @@ vagrant@terraform-vm$ cd ~/$GIT_REPO_NAME/labs/08-Deploy_microservice
 ## Apply Kubernetes configurations
 
 ```console
-vagrant@terraform-vm$ kubectl apply -f *
+vagrant@terraform-vm$ kubectl apply -f .
+deployment.extensions/web created
+ingress.extensions/basic-ingress created
+service/web created
 ```
+
